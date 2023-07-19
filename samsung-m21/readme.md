@@ -11,32 +11,32 @@
 - Magisk Addon Skvalex Call Recorder - https://github.com/Magisk-Modules-Repo/callrecorder-skvalex/releases
 - LZ4 - https://github.com/lz4/lz4/releases
 
-## What is KG State ?
+# What is KG State ?
 - __Prenormal__ Can't Flash Modify Rom / Can Flash Stock Rom
-	- The phone was factory reset. Waiting for status check after connecting to the internet
+    - The phone was factory reset. Waiting for status check after connecting to the internet
 - __Normal__ Can't Flash Modify Rom / Can Flash Stock Rom
-	- No contract or not due payment
+    - No contract or not due payment
 - __Blink__ Can't Flash Modify Rom / Can Flash Stock Rom
-	- due to pay service fee (sending bill)
+    - due to pay service fee (sending bill)
 - __Locked__ Can't Flash Modify Rom / Can't Flash Stock Rom
-	- overdue payment of service fees beyond the specified period
+    - overdue payment of service fees beyond the specified period
 - __Completed__ Can Flash Modify Rom / Can Flash Stock Rom
-	- Not attached to any contract
+    - Not attached to any contract
 - __Broken__ Can Flash Modify Rom / Can Flash Stock Rom
-	- Modified ROM status that may have usage problems such as the camera cannot be opened.
+    - Modified ROM status that may have usage problems such as the camera cannot be opened.
 - __Checking__ Can Flash Modify Rom / Can Flash Stock Rom
-	- Occurs when the Internet connection status is found. No contracts from Prenormal or caused by Knox blocking rom mods (beware of flashing).
+    - Occurs when the Internet connection status is found. No contracts from Prenormal or caused by Knox blocking rom mods (beware of flashing).
 - __No KG State__ Can Flash Modify Rom / Can Flash Stock Rom
-	- Similar to Checking, but without connecting to the Internet, it deletes KG in various ways and installs ROMs, modifies or the server is being changed by the administrator.
+    - Similar to Checking, but without connecting to the Internet, it deletes KG in various ways and installs ROMs, modifies or the server is being changed by the administrator.
 
 
-## What is OEM (Bootloader) ?
+# What is OEM (Bootloader) ?
 - `OEM = On (L)` = OEM Settings Off / OEM Locked
 - `OEM = On (U)` = OEM Settings On / OEM Locked
 - `OEM = Off (L)` = OEM Settings Off / OEM Unlocked
 - `OEM = Off (U)` = OEM Settings On / OEM Unlocked
 
-## Unlocking the Bootloader
+# Unlocking the Bootloader
 
 - Make sure OEM Unlock and USB debugging is ON in developer settings
 - Turn off the phone
@@ -45,34 +45,40 @@
 - ___Please be aware all your data will be erased including internal storage and phone will reboot!!___
 - Let the phone boot normally, pass the setup and connect to internet and turn on developer options and make sure OEM Unlock is enabled and greyed out in order to unlock RMM ;)
 
-## Reboot Guide
+# Reboot Guide
+
+__THUMBRULE__:
+- Keep USB plugged-in into your laptop
+- __DOWNLOAD MODE__ usb + volup + voldown
+- __RECOVERY MODE__ usb + power + volup
+- __RESTART__ power + voldown 
+
 From OneUI3, you need to keep your phone connected to a PC or a TV or another phone to be able to boot to recovery or download mode. If you have magisk installed, the easiest way would be to reboot using the Magisk app. If you're in Android 10 you can skip inserting a USB to reboot to Download mode and Recovery. Alternatively, you can use "adb reboot recovery" or "adb reboot download" from cmd or a terminal instead.
 
 - Force Rebooting
-	- Hold Volume Down and Power buttons
+    - Hold Volume Down and Power buttons
 - Force Shutdown
-	- Connect a charger (insert USB)
-	- Hold Volume Down and Power buttons
-	- Do not let go of the buttons till the charging animation appears
+    - Connect a charger (insert USB)
+    - Hold Volume Down and Power buttons
+    - Do not let go of the buttons till the charging animation appears
 - Rebooting to Download Mode
-	- When stuck in a bootloop or when booted
-		- Keep USB connected
-		- Hold Volume Down and Power buttons
-		- When screen turns off, hold Volume Up and Volume Down buttons
-	- When phone is turned off
-		- Hold Volume Up and Volume Down buttons
-		- Insert USB
+    - When stuck in a bootloop or when booted
+        - Keep USB connected
+        - Hold Volume Down and Power buttons
+        - When screen turns off, hold Volume Up and Volume Down buttons
+    - When phone is turned off
+        - Hold Volume Up and Volume Down buttons
+        - Insert USB
 - Rebooting to Recovery
-	- When stuck in a bootloop or when booted
-		- Keep USB connected
-		- Hold Volume Down and Power buttons
-		- When the screen turns off, hold Volume Up and Power buttons
-	- When phone is turned off
-		- Insert USB
-		- Hold Volume Up and Power buttons
+    - When stuck in a bootloop or when booted
+        - Keep USB connected
+        - Hold Volume Down and Power buttons
+        - When the screen turns off, hold Volume Up and Power buttons
+    - When phone is turned off
+        - Insert USB
+        - Hold Volume Up and Power buttons
 
-
-## Only Official Released Binaries Are Allowed To Be Flashed" Error
+# Only Official Released Binaries Are Allowed To Be Flashed" Error
 
 First Boot to download mode (boot to it using the button combo, rebooting to download mode with magisk or using the ADB command won't show all details)
 
@@ -98,7 +104,7 @@ __If that doesn't work,__
 If it's still showing prenormal, maybe wait a little more before trying all this again
 
 
-## GSI Naming
+# GSI Naming
 
 Some information you should know about what type of gsi you need
 
@@ -134,7 +140,7 @@ Generally you'll want to get `ARM64bgn`:
 - `n` - No SuperSU
 
 
-## Flasing GSI
+# Flasing GSI
 - Prerequisites
     - The GSI image
     - Optional
@@ -183,7 +189,7 @@ Generally you'll want to get `ARM64bgn`:
     - Not all GSIs will work
 
 
-## Flashing Magisk
+# Flashing Magisk
 - Prerequisites:
     - Unlock Your Bootloader First
     - Magisk
@@ -202,7 +208,7 @@ Generally you'll want to get `ARM64bgn`:
     - OR, rename it to boot.img and compress it to a tar archive, boot to Download Mode and flash it to AP with Odin
     - If your phone bootloops, flash #null_vbmeta to AP with Odin _(Not always necessary, but if you flash it, you might have to wipe data, or you'll face weird bugs)_
 
-## Flasing Recovery
+# Flasing Recovery
 - Prerequisites:
     - Unlock Your Bootloader First
     - Recovery Image Compressed to .tar, or Flashable Zip (#recovery)
@@ -232,53 +238,116 @@ Generally you'll want to get `ARM64bgn`:
     - Reboot
 
 
-## Flashing Stock ROM
+# Flashing Stock ROM
 - Requirements
-	- PC
-	- Odin
-	- Stock Firmware
-	- Samsung USB Drivers
-	- Backup All Important Data
-	- A Working Brain and Courage
-	- Download paitience from YouTube
+    - PC
+    - Odin
+    - Stock Firmware
+    - Samsung USB Drivers
+    - Backup All Important Data
+    - A Working Brain and Courage
+    - Download paitience from YouTube
 - Steps:
-	- Download the Rom
-	- Install Odin and Samsung Drivers and reboot your PC
-	- Turn off the phone
-	- Press volume up + volume down and insert USB cable again to enter download mode
-	- If you're stuck in a bootloop refer to the reboot guide in #guides
-	- Open Odin
-	- You will see that phone is detected by Odin
-	- Untick all boxes in options [for safety]
-	- Extract firmware and u will get 5 files
-	- Just select the tab
-		- AP = AP.tar.md5
-		- BL = BL.tar.md5
-		- CP = CP.tar.md5
-		- CSC = CSC.tar.md5
-	- If you want to save data
-		- CSC = HOME_CSC.tar.md5
-	- Click on flash to start flashing
-	- If it says pass, then it worked
-	- Press and hold power + volume down to reboot
+    - Download the Rom
+    - Install Odin and Samsung Drivers and reboot your PC
+    - Turn off the phone
+    - Press volume up + volume down and insert USB cable again to enter download mode
+    - If you're stuck in a bootloop refer to the reboot guide in #guides
+    - Open Odin
+    - You will see that phone is detected by Odin
+    - Untick all boxes in options [for safety]
+    - Extract firmware and u will get 5 files
+    - Just select the tab
+        - AP = AP.tar.md5
+        - BL = BL.tar.md5
+        - CP = CP.tar.md5
+        - CSC = CSC.tar.md5
+    - If you want to save data
+        - CSC = HOME_CSC.tar.md5
+    - Click on flash to start flashing
+    - If it says pass, then it worked
+    - Press and hold power + volume down to reboot
 
 
 
-## Multi disabler for m31 and m21
+# Multi disabler for m31 and m21
 - It disables these services
-	- FBE (File Based Encryption)
-	- Vaultkeeper
-	- Process authentication
-	- Stock recovery auto-restoration
-	- wsm
-	- extra services
+    - FBE (File Based Encryption)
+    - Vaultkeeper
+    - Process authentication
+    - Stock recovery auto-restoration
+    - wsm
+    - extra services
 - How to flash __Multi disabler for m31 and m21__
-	- Flash twrp.
-	- Then format data.
-	- Flash multi_disabler.
-	- Reboot ur device.
-	- Enter twrp again.
-	- Then format data again.
-	- Remove /data/knox folder.
-	- Reboot ur device.
-	- Ur device has been unlocked completely.
+    - Flash twrp.
+    - Then format data.
+    - Flash multi_disabler.
+    - Reboot ur device.
+    - Enter twrp again.
+    - Then format data again.
+    - Remove /data/knox folder.
+    - Reboot ur device.
+    - Ur device has been unlocked completely.
+
+
+# Firmware Extraction
+- Download firmware
+- Extract firmware zip file
+- You will get 5 types of files
+    - `AP_XXXXX.tar.md5`
+    - `BL_XXXXX.tar.md5`
+    - `CP_XXXXX.tar.md5`
+    - `CSC_XXXXX.tar.md5`
+    - `CSC_HOME_XXXXX.tar.md5`
+- You can remove `.md5` extension without any worry and it also saves time when you select these files in odin
+- Extract `AP` file, ignore warning: There are some data after the end of the payload data.
+- After 100% extract you can close 7zip window
+- You will get some .lz4 files
+- Use `lz4_win64_v1_9_3.zip` to convert them to normal `.img` file
+- Just drag `.lz4` file over `lz4.exe` to convert them
+- Now you can get `super.img` with this method
+- To open `super.img` _right click on it_ > `7-Zip` > `Open archive as #`
+- You will get
+    - `x.ext / (system)`
+    - `x.ext vendor`
+    - `x.ext product`
+    - `x.ext odm`
+- Drag these files on desktop
+- These are the RAW .ext image files, these represents the real partitions with actual data, filled with zeros at the end.
+- You can rename them from .ext to .img and use them to flash through twrp
+-Because these partitions are huge in size, so android has came up with sparse image format (simg)
+- Example of sparse image format is "super.img" which combines different RAW ext partitions, but compresses them by removing the ending zeros
+- They provide the tools to convert these images
+    - `simg2img`
+    - `img2simg`
+- I don't know if these original `.exe` files are provided by android, but i got hands on to some, from other publishers:
+    - `simg2img.zip` (people are complaining. when i tested, the output file size was differ from 7zip method, so dont use it)
+    - `simg2img_win.zip` (works exactly like the procedure done with 7zip# process. the sizes of the images matches exactly with 7zip# process, so 7zip works perfectly as this software)
+ 
+# Using ODIN
+- Download Samsung Usb Mobile Drivers
+- Download Odin 3.14.4
+- When using odin goto `Options` and uncheck `Auto Reboot` checkbox
+    - BL
+    - AP
+    - CP
+    - CSC (use CSC or use CSC_HOME file to prevent data partition loss)
+    - USERDATA (leave empty)
+
+# Terminologies
+- __VBMETA__ - 
+- __DM-VERIFY__ - something related to kernel, which also detects modified things
+- __boot__ - RAMDISK, KERNEL, MAGISK
+- __dtbo__ - 
+- __odm__ - 
+- __omr__ - 
+- __optics__ - 
+- __prism__ - 
+- __product__ - 
+- __recovery__ - stock/twrp
+- __super__ - containes system, vendor, product, odm
+- __system__ - GSI is system partition
+- __userdata__ - DATA partition
+- __vbmeta__ - detects any modified package used for flashing
+- __vbmeta_samsung__ - 
+- __vendor__ - manufacturer related important stuff like, wifi/bluetooth/camera drivers
