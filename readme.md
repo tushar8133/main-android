@@ -1,9 +1,9 @@
 # [Goto - Samsung M21](samsung-m21/readme.md)
 
-# SMS FILE LOCATION
+# SMS File Location
 `/data/user_de/0/com.android.providers.telephony/databases/mmssms.db`
 
-# DELETE PATTERN LOCK FROM RECOVERY
+# Delete Pattern Lock from Recovery
 ```
 /data/system/gatekeeper.password.key
 /data/system/gatekeeper.pattern.key
