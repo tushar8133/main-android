@@ -11,6 +11,16 @@
 - Magisk Addon Skvalex Call Recorder - https://github.com/Magisk-Modules-Repo/callrecorder-skvalex/releases
 - LZ4 - https://github.com/lz4/lz4/releases
 
+# Firmware Version
+- M215FXXS3CWF1
+- `M215F` - Model Numver
+- `XX` XX is for International/European. Others could be United States, South Korea, China, etc
+- `S3` Bootloader Version. Cannot be downgraded
+- `C` A=first major Android OS update for device, B=second major OS update, C=third, etc...
+- `W` P=2016, Q=2017, R=2018, S=2019, T=2020, U=2021, V=2022, W=2023, X=2024, Y=2025, Z=2026
+- `F` A=Jan, B=Feb, C=Mar, D=Apr, E=May, F=Jun, G=Jul, H=Aug, I=Sep, J=Oct, K=Nov, L=Dec
+- `1` How many times the firmware has build
+
 # What is KG State ?
 - __Prenormal__ Can't Flash Modify Rom / Can Flash Stock Rom
     - The phone was factory reset. Waiting for status check after connecting to the internet
