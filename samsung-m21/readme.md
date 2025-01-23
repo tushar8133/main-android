@@ -1,16 +1,3 @@
-# Links
-- Samsung Drivers - https://downloads.corsicanu.ro/samsung/
-- Firmware Download - https://samfw.com/firmware/SM-M215F/INS
-- Firmware Check Latest Version - https://doc.samsungmobile.com/SM-M215F/012739200617/wel.html
-- TWRP XDA Thread - https://forum.xda-developers.com/t/recovery-unofficial-3-5-2-twrp-for-galaxy-m21.4212799/
-- TWRP Download - https://github.com/soulr344/android_device_samsung_m21/releases
-- TWRP BootLogoPatcher - https://github.com/corsicanu/TWRP_Bootlogo_patcher/releases
-- TWRP BluetoothPatch - https://github.com/3arthur6/BluetoothLibraryPatcher/releases
-- Magisk Download apk and zip (just rename) - https://github.com/topjohnwu/Magisk/releases
-- Magisk Addon BypassBankingApps - https://github.com/kdrag0n/safetynet-fix/releases
-- Magisk Addon Skvalex Call Recorder - https://github.com/Magisk-Modules-Repo/callrecorder-skvalex/releases
-- LZ4 - https://github.com/lz4/lz4/releases
-
 # Firmware Version
 - M215FXXS3CWF1
 - `M215F` - Model Numver
