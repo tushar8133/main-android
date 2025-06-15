@@ -40,7 +40,7 @@
     ```sh
     adb -d sideload lineage-22.2-20250615-nightly-gta4l-signed.zip
     ```
-the output will stop at 47%, wait till it displays "Total xfer: 1.00x" in the terminal
+    - the output will stop at 47%. Wait till it displays "Total xfer: 1.00x" in the terminal
 - flash Gapps
     ```sh
     adb -d sideload MindTheGapps-15.0.0-arm64-20250214_082511.zip
